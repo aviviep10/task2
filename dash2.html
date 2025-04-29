@@ -1,50 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard 1 - My Task</title>
+  <meta charset="UTF-8">
+  <title>Dashboard 2 - My Task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Varela Round', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0288d1, #26c6da);
+      padding: 30px 20px;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .dashboard-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .tableauPlaceholder {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Dashboard 1</h1>
-    <div class='tableauPlaceholder' id='viz1745933013649' style='position: relative'>
-        <noscript>
-            <a href='#'>
-                <img alt='Dashboard 2' src='https://public.tableau.com/static/images/my/mytask_dash2/Dashboard2/1_rss.png' style='border: none' />
-            </a>
-        </noscript>
-        <object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='mytask_dash2/Dashboard2' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https://public.tableau.com/static/images/my/mytask_dash2/Dashboard2/1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-        </object>
-    </div>
 
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1745933013649');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) {
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        } else if (divElement.offsetWidth > 500) {
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        } else {
-            vizElement.style.width = '100%';
-            vizElement.style.height = '1027px';
-        }
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+  <header>
+    <h1>Dashboard 2 - My Task</h1>
+  </header>
+
+  <div class="dashboard-container">
+    <div class='tableauPlaceholder' id='viz1745933013649' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 2' src='https://public.tableau.com/static/images/my/mytask_dash2/Dashboard2/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='mytask_dash2/Dashboard2' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/my/mytask_dash2/Dashboard2/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
+  <div style="margin-top: 30px;">
+    <a href="index.html" style="
+      display: inline-block;
+      background: linear-gradient(90deg, #0288d1, #26c6da);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    "
+    onmouseover="this.style.background='linear-gradient(90deg, #0277bd, #00acc1)'"
+    onmouseout="this.style.background='linear-gradient(90deg, #0288d1, #26c6da)'">
+      ← חזרה לעמוד הבית
+    </a>
+  </div>
+
+  <footer>
+    © 2025 נבנה על ידי אביב אפשטיין | דשבורד מערכת ניהול
+  </footer>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1745933013649');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1027px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
 </body>
 </html>
