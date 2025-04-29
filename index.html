@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>מרכז הדשבורדים</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+    body {
+      font-family: 'Varela Round', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #0288d1;
+      padding: 40px 20px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .dashboard-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #0288d1;
+      font-size: 1.2em;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background-color: #e1f5fe;
+    }
+
+    .card::before {
+      content: "📊";
+      font-size: 2em;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>מרכז הדשבורדים</h1>
+    <p>בחר דשבורד לצפייה</p>
+  </header>
+
+  <section class="dashboard-links">
+    <a class="card" href="dash3.html">דשבורד 3</a>
+    <a class="card" href="dash1.html">דשבורד 2</a>
+    <a class="card" href="dash2.html">דשבורד 1</a>
+  </section>
+
+  <footer>
+    © 2025 דשבורדים | נבנה על ידי אביב אפשטיין
+  </footer>
+
+</body>
+</html>
