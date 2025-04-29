@@ -2,13 +2,13 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8">
-  <title>מרכז הדשבורדים</title>
+  <title>המערכת של אביב - תמחור הזמנות</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
     body {
       font-family: 'Varela Round', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
       margin: 0;
       padding: 0;
       text-align: center;
@@ -16,15 +16,42 @@
     }
 
     header {
-      background-color: #0288d1;
+      background: linear-gradient(90deg, #0288d1, #26c6da);
       padding: 40px 20px;
       color: white;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     h1 {
       margin: 0;
       font-size: 2.5em;
+    }
+
+    p.sub {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
+    section.description {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      text-align: right;
+      direction: rtl;
+    }
+
+    h2 {
+      color: #0288d1;
+    }
+
+    ul {
+      text-align: right;
+      direction: rtl;
+      padding-right: 20px;
+      font-size: 1.1em;
     }
 
     .dashboard-links {
@@ -56,7 +83,7 @@
     }
 
     .card::before {
-      content: "📊";
+      content: "🧮";
       font-size: 2em;
       display: block;
       margin-bottom: 15px;
@@ -73,18 +100,32 @@
 <body>
 
   <header>
-    <h1>מרכז הדשבורדים</h1>
-    <p>בחר דשבורד לצפייה</p>
+    <h1>המערכת של אביב</h1>
+    <p class="sub">מערכת ויזואליזציה רלוונטית לקבלת החלטות בתמחור הזמנות</p>
   </header>
 
+  <section class="description">
+    <h2>על המערכת</h2>
+    <p>
+      המערכת פותחה ככלי תומך החלטות עבור מנהלי רכש, שיווק ואנליזה, לצורך תמחור הזמנות, ניתוח מגמות וביצועים עסקיים.
+    </p>
+
+    <h2>מטרות עיקריות:</h2>
+    <ul>
+      <li>תמחור מדויק של הזמנות לפי קטגוריה ואזור</li>
+      <li>ניתוח התפלגות עלויות ורווחיות</li>
+      <li>מעקב אחר מגמות לפי תקופות</li>
+    </ul>
+  </section>
+
   <section class="dashboard-links">
-    <a class="card" href="dash3.html">דשבורד 3</a>
-    <a class="card" href="dash1.html">דשבורד 2</a>
-    <a class="card" href="dash2.html">דשבורד 1</a>
+    <a class="card" href="dash1.html">Dashboard 1</a>
+    <a class="card" href="dash2.html">Dashboard 2</a>
+    <a class="card" href="dash3.html">Dashboard 3</a>
   </section>
 
   <footer>
-    © 2025 דשבורדים | נבנה על ידי אביב אפשטיין
+    © 2025 נבנה על ידי אביב אפשטיין | כל הזכויות שמורות
   </footer>
 
 </body>
